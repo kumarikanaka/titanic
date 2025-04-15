@@ -1,0 +1,61 @@
+Summary of Relationships to Look For:
+
+Feature	        Likely Relationship to Survival	      Why?
+sex	            Strong positive for female	      "Women and children first" policy
+pclass	        Positive for 1st class	           Higher priority during evacuation
+age	            Non-linear (children saved)	       Young passengers may be prioritized
+fare        	Slight positive	                   Higher fare → better cabins → more access
+sibsp / parch	Moderate (family connections)	   Families may stick together or get help
+
+
+SUMMARY OF TITANIC DATASET EDA FINDINGS
+1.Survival Rate
+Only 38% of passengers survived the Titanic disaster.
+The majority (~62%) did not survive.
+
+2.  Gender vs Survival
+
+   a) Females had a much higher survival rate than males.
+
+   b) This supports the historical “women and children first” evacuation policy.
+
+3.  Passenger Class (Pclass)
+
+   a) Passengers in 1st class had a significantly higher chance of survival.
+
+   b)Survival rates decreased with class: 1st > 2nd > 3rd.
+     Most passengers were in 3rd class, and they had the lowest survival rate.
+
+4.  Age Distribution
+
+   a)Passengers were mostly young adults, with a median age around 28.
+
+   b)Children had higher survival chances, while older adults were less likely to survive.
+
+   c)Age did not have a strong linear correlation with survival but showed trends.
+
+5.  Fare
+
+   a)There was a positive trend between higher fares and survival.
+
+   b)Survivors, on average, paid higher fares — indicating possible better cabins or priority access.
+
+6.  Family Onboard (SibSp & Parch)
+
+   a)Most passengers traveled alone.
+
+   b)Having family members may have slightly helped survival, but it’s not a strong factor.
+
+7.  Correlation Heatmap
+
+   a)fare and pclass showed some correlation with survival.
+
+   b)sex was a very strong indicator (when encoded numerically).
+
+   c)No extreme multicollinearity between numeric features, so each adds some unique information.
+
+Key Insights:
+    Being female, in first class, and paying a higher fare significantly increased your chances of survival.
+
+    Being male, young adult, in third class, and traveling alone were associated with lower survival.
+
